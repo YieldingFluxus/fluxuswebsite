@@ -57,9 +57,9 @@
           /></span
         ></Link
       >
-      <Link to="dl"><span class="cont">Download</span></Link>
+      <Link to="dl" class="nomobile"><span class="cont">Download</span></Link>
       <Link to="android"><span class="cont">Android</span></Link>
-      <a href={discord}><span class="cont">Discord</span></a>
+      <a href={discord} class="nomobile"><span class="cont">Discord</span></a>
     </nav>
   </div>
   <div class="page">
