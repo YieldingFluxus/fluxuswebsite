@@ -65,9 +65,10 @@
       </p>
       <br />
       <Link to="android" class="active">
-        <span class="text">Get Fluxus Android</span><span
-          class="material-symbols-outlined icon"
-        >
+        <span class="onlymobile">Download</span>
+        <span class="nomobile"
+          ><span class="text">Get Fluxus Android</span>
+        </span><span class="material-symbols-outlined icon">
           arrow_forward_ios
         </span>
       </Link>

@@ -53,7 +53,8 @@
         P.S. You can buy premium <a
           href="https://discord.gg/sMjjsX4P"
           target="_blank"
-          rel="noopener noreferrer">in our discord</a
+          rel="noopener noreferrer"
+          class="nobtn">in our discord</a
         > to skip the key system.
       </p>
     </div>
@@ -94,12 +95,15 @@
   }
   .p3 {
     background: #24273a;
-    a {
+    a:not(.nobtn) {
       color: rgb(202, 211, 245);
       text-decoration: none;
       padding: 8px 8px;
       background: rgb(141, 115, 176);
       /*border-radius: 16px;*/
+    }
+    a.nobtn {
+      color: rgb(202, 211, 245);
     }
   }
 </style>
