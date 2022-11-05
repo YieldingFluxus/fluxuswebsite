@@ -4,6 +4,10 @@
   import Fluxus73MainUI from '../assets/Fluxus_N8qYfLrYAx.png';
   import aui from '../assets/aui.png';
   import Icon from '../assets/faviconbutpng.png';
+  const shouldDisableUI =
+    navigator.userAgent.includes('Safari') ||
+    navigator.userAgent.includes('iPhone');
+  console.log(shouldDisableUI, navigator.userAgent);
 </script>
 
 <main class="index">
@@ -28,7 +32,11 @@
   <div class="page2">
     <div class="inner">
       <div class="ui">
-        <img src={Fluxus73MainUI} alt="Fuuuuuuuuuuuuuuuuuuux 🤯 UI" />
+        <img
+          src={Fluxus73MainUI}
+          alt="Fuuuuuuuuuuuuuuuuuuux 🤯 UI"
+          style={shouldDisableUI ? 'display:none' : ''}
+        />
       </div>
       <div class="centerme">
         <h1>A Minimalistic UI</h1>
@@ -51,7 +59,7 @@
     </div>
   </div>
   <div class="page4">
-    <img src={aui} alt="" />
+    <img src={aui} alt="" style={shouldDisableUI ? 'display:none' : ''} />
     <div class="ok" style="position: relative; z-index: 50;">
       <h1>
         <underline
@@ -65,7 +73,6 @@
       </p>
       <br />
       <Link to="android" class="active">
-        <span class="onlymobile">Download</span>
         <span class="nomobile"
           ><span class="text">Get Fluxus Android</span>
         </span><span class="material-symbols-outlined icon">
