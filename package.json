@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cd dist && cpy index.html dl/ && cpy index.html android/",
+    "build": "vite build && cd dist && cpy index.html dl/ && cpy index.html android/ && cpy index.html branding/ && cpy index.html acknowledgements/",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },

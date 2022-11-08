@@ -13,6 +13,9 @@ body {
 body:not([data-z="true"]) .navContainer {  
   background: #00000041;
 }
+a, a:visited {
+  color: rgb(141, 115, 176);
+}
 .navContainer {
   width: 100vw;
   position: sticky;

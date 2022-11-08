@@ -6,6 +6,7 @@
   import Favicon from './assets/logo.png';
   import Android from './Routes/android.svelte';
   import Download from './Routes/download.svelte';
+  import Acknowledgements from './Routes/acknowledgements.svelte';
 
   let windowHeight;
   setInterval(() => {
@@ -66,5 +67,6 @@
     <Route path="/"><Home /></Route>
     <Route path="/dl"><Download /></Route>
     <Route path="/android"><Android /></Route>
+    <Route path="/acknowledgements"><Acknowledgements /></Route>
   </div>
 </Router>

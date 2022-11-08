@@ -73,7 +73,7 @@
       <br />
       <p>
         P.S. You can buy premium <a
-          href="https://discord.gg/sMjjsX4P"
+          href="https://discord.gg/V7axDCK3q8"
           target="_blank"
           rel="noopener noreferrer"
           class="nobtn">in our discord</a
