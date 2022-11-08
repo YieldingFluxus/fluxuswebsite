@@ -137,5 +137,6 @@
     position: absolute;
     bottom: 0;
     color: #ddddddaa;
+    font-size: 1.05rem;
   }
 </style>
