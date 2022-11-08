@@ -27,7 +27,7 @@
   <div class="p2">
     <div class="licenses">
       <div class="license">
-        <h2><Link to="/">fluxteam.net</Link></h2>
+        <h2><Link to="/">Fluxus Website</Link></h2>
         <p>
           Copyright (c) 2022 YieldingExploiter<br />
           <br />
