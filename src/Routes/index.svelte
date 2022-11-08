@@ -7,7 +7,6 @@
   const shouldDisableUI =
     navigator.userAgent.includes('Safari') ||
     navigator.userAgent.includes('iPhone');
-  console.log(shouldDisableUI, navigator.userAgent);
 </script>
 
 <main class="index">
