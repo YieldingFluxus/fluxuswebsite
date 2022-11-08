@@ -7,6 +7,17 @@
         experience.
       </p>
     </div>
+    <div class="putmeonthebottom">
+      <p style="margin-bottom: -0.4em">Installation</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48"
+        width="48"
+        fill="#ddddddaa"
+      >
+        <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
+      </svg>
+    </div>
   </div>
   <div class="p2">
     <div>
@@ -21,6 +32,17 @@
         controls
         style="/*border-radius: 16px;*/"
       />
+    </div>
+    <div class="putmeonthebottom">
+      <p style="margin-bottom: -0.4em">Resources</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48"
+        width="48"
+        fill="#ddddddaa"
+      >
+        <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
+      </svg>
     </div>
   </div>
   <div class="p3">
@@ -65,10 +87,10 @@
   .p1,
   .p2,
   .p3 {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     background: #191a27;
 
@@ -82,7 +104,11 @@
       font-size: 1.2em;
     }
   }
+  .p1 {
+    min-height: calc(100vh - 54px);
+  }
   .p2 {
+    min-height: 100vh;
     background: #24273a;
     video {
       max-width: 50vw;
@@ -94,7 +120,8 @@
     }
   }
   .p3 {
-    background: #24273a;
+    min-height: 100vh;
+    background: #1e2030;
     a:not(.nobtn) {
       color: rgb(202, 211, 245);
       text-decoration: none;
@@ -105,5 +132,10 @@
     a.nobtn {
       color: rgb(202, 211, 245);
     }
+  }
+  .putmeonthebottom {
+    position: absolute;
+    bottom: 0;
+    color: #ddddddaa;
   }
 </style>

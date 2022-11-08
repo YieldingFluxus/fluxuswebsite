@@ -27,6 +27,17 @@
         </Link>
       </div>
     </div>
+    <div class="putmeonthebottom">
+      <p style="margin-bottom: -0.4em">Scroll down for more</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48"
+        width="48"
+        fill="#ddddddaa"
+      >
+        <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
+      </svg>
+    </div>
   </div>
   <div class="page2">
     <div class="inner">
@@ -81,3 +92,11 @@
     </div>
   </div>
 </main>
+
+<style lang="scss">
+  .putmeonthebottom {
+    position: absolute;
+    bottom: 0;
+    color: #ddddddaa;
+  }
+</style>
