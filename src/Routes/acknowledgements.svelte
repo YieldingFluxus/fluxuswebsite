@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Link } from 'svelte-routing';
+  import baseUrl from '../base';
 </script>
 
 <main>
@@ -27,7 +28,7 @@
   <div class="p2">
     <div class="licenses">
       <div class="license">
-        <h2><Link to="/">Fluxus Website</Link></h2>
+        <h2><Link to="{baseUrl}/">Fluxus Website</Link></h2>
         <p>
           Copyright (c) 2022 YieldingExploiter<br />
           <br />

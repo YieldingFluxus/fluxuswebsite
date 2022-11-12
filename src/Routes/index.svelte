@@ -4,6 +4,7 @@
   import Fluxus73MainUI from '../assets/Fluxus_N8qYfLrYAx.png';
   import aui from '../assets/aui.png';
   import Icon from '../assets/faviconbutpng.png';
+  import baseUrl from '../base';
   const shouldDisableUI =
     navigator.userAgent.includes('Safari') ||
     navigator.userAgent.includes('iPhone');
@@ -18,7 +19,7 @@
           <span class="c">A Fresh<br />Execution Experience.</span>
         </h1>
         <p class="👌👌👌 👌">Unrivaled Power, Unbeatable Pricepoint<br />​</p>
-        <Link to="dl" class="active">
+        <Link to="{baseUrl}/dl" class="active">
           <span class="text">Download now</span><span
             class="material-symbols-outlined icon"
           >
@@ -82,7 +83,7 @@
         pocket. For free.
       </p>
       <br />
-      <Link to="android" class="active">
+      <Link to="{baseUrl}/android" class="active">
         <span class="nomobile"
           ><span class="text">Get Fluxus Android</span>
         </span><span class="material-symbols-outlined icon">

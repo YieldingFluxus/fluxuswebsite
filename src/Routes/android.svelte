@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Link } from 'svelte-routing';
+  import baseUrl from '../base';
 </script>
 
 <main>
@@ -32,7 +33,7 @@
       </p>
       <!-- svelte-ignore a11y-media-has-caption -->
       <video
-        src="/android-current.mp4"
+        src="{baseUrl}/android-current.mp4"
         controls
         style="/*border-radius: 16px;*/"
       />
@@ -58,8 +59,8 @@
         rel="noopener noreferrer">Fluxus APK</a
       ><br />
       <p>
-        Having issues with Fluxus Android? Try the <Link to="/android/legacy"
-          >Legacy Installation</Link
+        Having issues with Fluxus Android? Try the <Link
+          to="{baseUrl}/android/legacy">Legacy Installation</Link
         >
       </p>
       <p>

@@ -8,6 +8,7 @@
   import AndroidLegacy from './Routes/android.legacy.svelte';
   import Download from './Routes/download.svelte';
   import Acknowledgements from './Routes/acknowledgements.svelte';
+  import baseUrl from './base';
 
   let windowHeight;
   setInterval(() => {
@@ -50,7 +51,7 @@
 <Router {url}>
   <div class="navContainer">
     <nav>
-      <Link to="/"
+      <Link to="{baseUrl}/"
         ><span class="cont"
           ><img
             src={Favicon}
@@ -59,8 +60,10 @@
           /></span
         ></Link
       >
-      <Link to="dl" class="nomobile"><span class="cont">Download</span></Link>
-      <Link to="android"><span class="cont">Android</span></Link>
+      <Link to="{baseUrl}/dl" class="nomobile"
+        ><span class="cont">Download</span></Link
+      >
+      <Link to="{baseUrl}/android"><span class="cont">Android</span></Link>
       <a href={discord} class="nomobile"><span class="cont">Discord</span></a>
     </nav>
   </div>
@@ -73,5 +76,13 @@
     <Route path="/android/legacy"><AndroidLegacy /></Route>
     <Route path="/android/legacy.html"><AndroidLegacy /></Route>
     <Route path="/acknowledgements"><Acknowledgements /></Route>
+    <Route path="{baseUrl}/"><Home /></Route>
+    <Route path="{baseUrl}/dl"><Download /></Route>
+    <Route path="{baseUrl}/android"><Android /></Route>
+    <Route path="{baseUrl}/android/install"><Android /></Route>
+    <Route path="{baseUrl}/android/install.html"><Android /></Route>
+    <Route path="{baseUrl}/android/legacy"><AndroidLegacy /></Route>
+    <Route path="{baseUrl}/android/legacy.html"><AndroidLegacy /></Route>
+    <Route path="{baseUrl}/acknowledgements"><Acknowledgements /></Route>
   </div>
 </Router>
