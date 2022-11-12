@@ -5,14 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cd dist && cpy index.html dl/ && cpy index.html android/ && cpy index.html branding/ && cpy index.html acknowledgements/",
+    "build": "vite build && node copy.js dist/index.html dist/dl/index.html && node copy.js dist/index.html dist/android/index.html && node copy.js dist/index.html dist/android/install.html && node copy.js dist/index.html dist/android/legacy.html && node copy.js dist/index.html dist/android/install/index.html && node copy.js dist/index.html dist/android/legacy/index.html && node copy.js dist/index.html dist/branding/index.html && node copy.js dist/index.html dist/acknowledgements/index.html",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.1.0",
     "@tsconfig/svelte": "^3.0.0",
+    "@types/fs-extra": "^9.0.13",
     "cpy-cli": "^4.2.0",
+    "fs-extra": "^10.1.0",
     "sass": "^1.56.0",
     "svelte": "^3.52.0",
     "svelte-check": "^2.9.2",

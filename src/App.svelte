@@ -5,6 +5,7 @@
   import Home from './Routes/index.svelte';
   import Favicon from './assets/logo.png';
   import Android from './Routes/android.svelte';
+  import AndroidLegacy from './Routes/android.legacy.svelte';
   import Download from './Routes/download.svelte';
   import Acknowledgements from './Routes/acknowledgements.svelte';
 
@@ -67,6 +68,10 @@
     <Route path="/"><Home /></Route>
     <Route path="/dl"><Download /></Route>
     <Route path="/android"><Android /></Route>
+    <Route path="/android/install"><Android /></Route>
+    <Route path="/android/install.html"><Android /></Route>
+    <Route path="/android/legacy"><AndroidLegacy /></Route>
+    <Route path="/android/legacy.html"><AndroidLegacy /></Route>
     <Route path="/acknowledgements"><Acknowledgements /></Route>
   </div>
 </Router>

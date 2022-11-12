@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { Link } from 'svelte-routing';
+</script>
+
 <main>
   <div class="p1">
     <div>
@@ -28,7 +32,7 @@
       </p>
       <!-- svelte-ignore a11y-media-has-caption -->
       <video
-        src="https://cdn.discordapp.com/attachments/1037510861369118841/1037515767429726268/2022-11-02_19-55-01.mp4"
+        src="/android-current.mp4"
         controls
         style="/*border-radius: 16px;*/"
       />
@@ -49,28 +53,15 @@
     <div>
       <h1>Resources</h1>
       <a
-        href="https://cdn.discordapp.com/attachments/1036294505646796891/1037543606967345162/MT_Manager.apk"
+        href="https://cdn.discordapp.com/attachments/1026465307683987537/1040821020384317490/Fluxus.apk"
         target="_blank"
-        rel="noopener noreferrer">MT Manager</a
-      ><br /><br />
-      <a
-        href="https://cdn.discordapp.com/attachments/1026465307683987537/1037911047362842694/libFluxusAndroid.so"
-        target="_blank"
-        rel="noopener noreferrer">libFluxusAndroid.so</a
-      ><br /><br />
-      <a
-        href="https://apkcombo.com/roblox/com.roblox.client/download/apk"
-        target="_blank"
-        rel="noopener noreferrer">Roblox APK - APK Combo</a
-      >
-      <p>Smali Code:</p>
-      <!-- svelte-ignore a11y-missing-attribute -->
-      <iframe
-        src="https://yieldingfluxus.github.io/smalipage"
-        style="border:none; width: 512px; max-width: 95vw;"
-        frameborder="0"
-      />
-      <br />
+        rel="noopener noreferrer">Fluxus APK</a
+      ><br />
+      <p>
+        Having issues with Fluxus Android? Try the <Link to="/android/legacy"
+          >Legacy Installation</Link
+        >
+      </p>
       <p>
         P.S. You can buy premium <a
           href="https://discord.gg/V7axDCK3q8"
