@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node copy.js dist/index.html dist/dl/index.html && node copy.js dist/index.html dist/android/index.html && node copy.js dist/index.html dist/android/install.html && node copy.js dist/index.html dist/android/legacy.html && node copy.js dist/index.html dist/android/install/index.html && node copy.js dist/index.html dist/android/legacy/index.html && node copy.js dist/index.html dist/branding/index.html && node copy.js dist/index.html dist/acknowledgements/index.html",
+    "build": "vite build && node copy.js dist/index.html dist/404.html && node copy.js dist/index.html dist/dl/index.html && node copy.js dist/index.html dist/android/index.html && node copy.js dist/index.html dist/android/install.html && node copy.js dist/index.html dist/android/legacy.html && node copy.js dist/index.html dist/android/install/index.html && node copy.js dist/index.html dist/android/legacy/index.html && node copy.js dist/index.html dist/branding/index.html && node copy.js dist/index.html dist/acknowledgements/index.html",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },

@@ -25,6 +25,12 @@
     <meta name="og:description" content="A Fresh Execution Experience" />
     <meta name="og:image" content="/faviconbutpng.png" />
     <meta name="theme-color" content="#8d73b0" />
+    <script>
+      if (window.location.protocol.includes('file'))
+        alert(
+          'bro, u need a static file server\ntry https://npm.im/sirv-cli or nginx or smth'
+        );
+    </script>
   </head>
   <body>
     <div id="app"></div>
