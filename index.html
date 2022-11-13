@@ -32,11 +32,14 @@
         );
       if (navigator.userAgent.includes('Chrome/')) {
         const v = document.createElement('style');
-        v.innerHTML = `*{will-change:scroll-position;}
-.centerme {will-change: transform;}
-.cont img{padding-right:8px}`;
+        v.innerHTML = `.cont img{padding-right:8px}.page1 {backdrop-filter:none !important;background:linear-gradient(135deg,#181926,#1e2030);}`;
         document.head.appendChild(v);
       }
+      // if (!navigator.userAgent.includes('Firefox/')) {
+      //   const v = document.createElement('style');
+      //   v.innerHTML = `.page1 {backdrop-filter:none !important;background:linear-gradient(135deg,#181926,#1e2030);}`;
+      //   document.head.appendChild(v);
+      // }
     </script>
   </head>
   <body>
