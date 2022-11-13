@@ -5,9 +5,7 @@
   import aui from '../assets/aui.png';
   import Icon from '../assets/faviconbutpng.png';
   import baseUrl from '../base';
-  const shouldDisableUI =
-    navigator.userAgent.includes('Safari') ||
-    navigator.userAgent.includes('iPhone');
+  const shouldDisableUI = navigator.userAgent.includes('iPhone');
 </script>
 
 <main class="index">
