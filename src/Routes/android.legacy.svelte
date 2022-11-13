@@ -1,4 +1,6 @@
 <script lang="ts">
+  import baseUrl from '../base';
+
   let soURL = '';
   fetch('https://flux.li/android/external/so.txt')
     .then((v) => v.text())
@@ -8,10 +10,10 @@
 <main>
   <div class="p1">
     <div>
-      <h1>A Unique Mobile Experience.</h1>
+      <h1>Legacy Installation</h1>
       <p>
-        Crafted by industry leaders, Fluxus Android is the ultimate android
-        experience.
+        Is Fluxus Android not working?<br />
+        Try this legacy installation method instead.
       </p>
     </div>
     <div class="putmeonthebottom">
@@ -33,8 +35,13 @@
         Below, you can find a video with instructions on downloading Fluxus
         Android.
       </p>
-      <!-- svelte-ignore a11y-media-has-caption -->
-      <video src="" controls style="/*border-radius: 16px;*/" />
+      <iframe
+        src="https://www.youtube.com/embed/eafNvvjVUhY?t=24"
+        title="fluxus android legacy install"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+        allowfullscreen
+      />
     </div>
   </div>
   <div class="p3">
@@ -112,11 +119,12 @@
   .p2 {
     min-height: 100vh;
     background: #24273a;
-    video {
-      max-width: 50vw;
+    iframe {
+      width: 50vw;
+      height: 50vh;
     }
     @media screen and (max-width: 1000px) {
-      video {
+      iframe {
         max-width: 75vw;
       }
     }
