@@ -10,6 +10,14 @@
   import Acknowledgements from './Routes/acknowledgements.svelte';
   import baseUrl from './base';
 
+  // easter egg
+  if (localStorage.getItem('og-vibes'))
+    if (document.location.href.includes('/dl'))
+      if (confirm('The old layout breaks things - Are you sure?')) {
+        document.body.style.background =
+          'url(https://cdn.discordapp.com/attachments/922892706638872617/928031837446635600/New_Project_37_FFCA699.png) no-repeat 50%';
+      } else localStorage.removeItem('og-vibes');
+
   let windowHeight;
   setInterval(() => {
     windowHeight = Math.min(
