@@ -30,9 +30,17 @@
         alert(
           'bro, u need a static file server\ntry https://npm.im/sirv-cli or nginx or smth'
         );
+      if (navigator.userAgent.includes('Chrome/')) {
+        const v = document.createElement('style');
+        v.innerHTML = `*{will-change:scroll-position;}
+.centerme {will-change: transform;}
+.cont img{padding-right:8px}`;
+        document.head.appendChild(v);
+      }
     </script>
   </head>
   <body>
-    <div id="app"></div><script type="module" src="/src/main.ts"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

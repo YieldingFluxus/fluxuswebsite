@@ -26,7 +26,6 @@ a, a:visited {
   z-index: 500;
   backdrop-filter: blur(16px);
   background: #00000000;
-  transition: 0.5s;
   nav {
     display: flex;
     justify-content: left;
@@ -37,15 +36,10 @@ a, a:visited {
       text-decoration: none;
       color: #bbb !important;
       font-weight: 400;
-      transition: 1s;
+      transition: color 1s;
       &:hover {
         color: #ddd !important;
         font-weight: 500;
-      }
-      .cont {
-        padding: 4px 4px;
-        border-bottom: 0px solid #dddddd;
-        transition: 0.2s;
       }
     }
     .rightdl {
