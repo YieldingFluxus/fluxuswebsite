@@ -43,6 +43,17 @@
   window.addEventListener('scroll', updateScroll);
   updateScroll();
 
+  if (navigator.userAgent.includes('Chrome/')) {
+    const v = document.createElement('style');
+    v.innerHTML = `.cont img{padding-left:4px}`;
+    document.head.appendChild(v);
+  }
+  if (!navigator.userAgent.includes('Firefox/')) {
+    const v = document.createElement('style');
+    v.innerHTML = `.page1 {backdrop-filter:none !important;background:linear-gradient(135deg,#181926,#1e2030);}`;
+    document.head.appendChild(v);
+  }
+
   // discord & whatnot
   export let url = '';
   let discord = 'https://discord.gg/GNHbGPbah2';
