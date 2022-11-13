@@ -11,7 +11,10 @@
   import baseUrl from './base';
 
   // easter egg
-  if (localStorage.getItem('og-vibes'))
+  if (
+    localStorage.getItem('og-vibes') ||
+    document.location.href.includes('use-og-vibes=true')
+  )
     if (document.location.href.includes('/dl'))
       if (confirm('The old layout breaks things - Are you sure?')) {
         document.body.style.background =
