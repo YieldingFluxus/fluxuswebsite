@@ -1,5 +1,5 @@
 <!-- App.svelte -->
-<script>
+<script lang="ts">
   import { Router, Link, Route } from 'svelte-routing';
   // @ts-ignore
   import Home from './Routes/index.svelte';
@@ -20,18 +20,21 @@
       document.documentElement.offsetHeight
     );
   }, 500);
+  const attrCache = {};
+  const updateAttribute = (k: string, v: string) => {
+    if (attrCache[k] === v) return;
+    document.body.setAttribute(k, v);
+    attrCache[k] = v;
+  };
   const updateScroll = () => {
     if (!windowHeight || Math.floor(windowHeight) === 0)
       windowHeight = window.screenY;
-    document.body.setAttribute(
-      'data-z',
-      window.scrollY === 0 ? 'true' : 'false'
-    );
-    document.body.setAttribute(
+    updateAttribute('data-z', window.scrollY === 0 ? 'true' : 'false');
+    updateAttribute(
       'data-n',
       Math.floor((window.scrollY + 64) / windowHeight).toString()
     );
-    document.body.setAttribute(
+    updateAttribute(
       'data-nb',
       Math.floor((window.scrollY + windowHeight) / windowHeight).toString()
     );
