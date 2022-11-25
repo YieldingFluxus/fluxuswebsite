@@ -42,6 +42,10 @@
       windowHeight = window.screenY;
     updateAttribute('data-z', window.scrollY === 0 ? 'true' : 'false');
     updateAttribute(
+      'data-pn',
+      Math.floor((window.scrollY + 256) / windowHeight).toString()
+    );
+    updateAttribute(
       'data-n',
       Math.floor((window.scrollY + 64) / windowHeight).toString()
     );

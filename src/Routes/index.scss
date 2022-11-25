@@ -207,7 +207,7 @@ main {
     }
   }
 }
-body:not([data-n="2"]):not([data-n="3"]:not([data-nb="4"])) .page3 .cards {
+body:not([data-pn="2"]):not([data-pn="3"]:not([data-nb="4"])) .page3 .cards {
   @for $counter from 0 through 6 {
     .card:nth-child(#{$counter}) {
       opacity: 0;
@@ -218,8 +218,8 @@ body:not([data-n="2"]):not([data-n="3"]:not([data-nb="4"])) .page3 .cards {
     }
   }
 }
-body[data-n="2"],
-body[data-n="3"]:not([data-nb="4"]) {
+body[data-pn="2"],
+body[data-pn="3"]:not([data-nb="4"]) {
   .page3 .cards {
     @for $counter from 0 through 6 {
       .card:nth-child(#{$counter}) {
