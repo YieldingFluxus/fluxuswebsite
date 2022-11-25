@@ -12,24 +12,40 @@
         target="_blank"
         rel="noreferrer">LV</a
       >
+      <a href="https://wearedevs.net/d/Fluxus" target="_blank" rel="noreferrer"
+        >WeAreDevs</a
+      >
       <p>
         Note: The above contain advertisements. Please be aware of these before
         you continue.
       </p>
+      <hr />
+      <h2>Need Help?</h2>
+      <iframe
+        width="1024"
+        height="576"
+        style="max-height: 75vh; max-width: 75vw"
+        src="https://www.youtube.com/embed/bIw9PxRc3As"
+        title="[UPDATED] How to Install FLUXUS Executor Free | Download Tutorial | Level 8 Exploit | 2022"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
     </div>
   </div>
 </main>
 
 <style lang="scss">
   .p1 {
-    min-height: calc(100vh - 64px);
+    min-height: calc(100vh - 54px);
     display: flex;
     justify-content: center;
     align-items: center;
 
     background: #191a27;
 
-    h1 {
+    h1,
+    h2 {
       color: rgb(141, 115, 176);
     }
 
