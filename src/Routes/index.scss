@@ -177,6 +177,63 @@ main {
   }
 }
 
+@for $counter from 0 through 6 {
+  @keyframes playin-#{$counter} {
+    0% {
+      transform: translate(-50%,0);
+      opacity: 0;
+    }
+    #{calc(($counter*20)/6)+"%"} {
+      transform: translate(-50%,0);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0,0);
+      opacity: 1;
+    }
+  }
+  @keyframes playout-#{$counter} {
+    100% {
+      transform: translate(-50%,0);
+      opacity: 0;
+    }
+    #{(100 - calc(($counter*20)/6))+"%"} {
+      transform: translate(-50%,0);
+      opacity: 0;
+    }
+    0% {
+      transform: translate(0,0);
+      opacity: 1;
+    }
+  }
+}
+body:not([data-n="2"]):not([data-n="3"]:not([data-nb="4"])) .page3 .cards {
+  @for $counter from 0 through 6 {
+    .card:nth-child(#{$counter}) {
+      opacity: 0;
+      transition: opacity 0.3s;
+      animation-name: #{"playout-"+$counter};
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+    }
+  }
+}
+body[data-n="2"],
+body[data-n="3"]:not([data-nb="4"]) {
+  .page3 .cards {
+    @for $counter from 0 through 6 {
+      .card:nth-child(#{$counter}) {
+        opacity: 1;
+        transition: opacity 0.3s;
+        animation-name: #{"playin-"+$counter};
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        // animation-delay: #{$counter+"00ms"};
+      }
+    }
+  }
+}
+
 body[data-nb="1"] .ui {
   position: fixed;
   top: 50vh;

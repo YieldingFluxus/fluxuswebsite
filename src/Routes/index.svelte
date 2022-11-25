@@ -6,6 +6,25 @@
   import Icon from '../assets/faviconbutpng.png';
   import baseUrl from '../base';
   const shouldDisableUI = navigator.userAgent.includes('iPhone');
+  let debounce = [];
+  setInterval(() => {
+    document.querySelectorAll('.cards').forEach((v) => {
+      if (debounce.includes(v)) return;
+      debounce.push(v);
+      // @ts-ignore
+      v.onmousemove = (e) => {
+        for (const card of document.getElementsByClassName('card')) {
+          const rect = card.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+          const c = card as any;
+
+          c.style.setProperty('--mouse-x', `${x}px`);
+          c.style.setProperty('--mouse-y', `${y}px`);
+        }
+      };
+    });
+  }, 500);
 </script>
 
 <main class="index">
@@ -58,13 +77,115 @@
     </div>
   </div>
   <div class="page3">
-    <div>
-      <h1>99% of scripts simply<br />work.</h1>
-      <p>
-        With Fluxus, there's no need to look through dozens of pages of scripts
-        to find one that supports your executor.<br />
-        Our powerful execution core supports most scripts out-of-the-box.
-      </p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <i class="fa-solid fa-bolt" />
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+                <h3>Fast</h3>
+                <h4>
+                  On all supported platforms, Fluxus performs significantly
+                  better than the competition.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <i class="fa-solid fa-code" />
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+                <h3>Advanced IDE</h3>
+                <h4>
+                  The Fluxus IDE is amongst one of the most advanced on the
+                  market.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <i class="fa-solid fa-lock" />
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+                <h3>Secure & Undetectable</h3>
+                <h4>
+                  We have a great track record of patching all known
+                  vulnerabilities & detections quickly.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <i class="fa-solid fa-plus" />
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+                <h3>Reliable</h3>
+                <h4>
+                  Our Advanced Execution Core is extremely reliable, allowing
+                  you to execute most scripts.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <i class="fa-solid fa-handshake" />
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+                <h3>Reputable</h3>
+                <h4>
+                  During the past {new Date().getUTCFullYear() - 2019} years, we've
+                  established a reputation as industry leaders.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="card-image">
+            <i class="fa-solid fa-circle-up" />
+          </div>
+          <div class="card-info-wrapper">
+            <div class="card-info">
+              <div class="card-info-title">
+                <h3>Fast Updates</h3>
+                <h4>
+                  No more waiting for updates: Most of the time, Fluxus updates
+                  within under an hour.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="page4">
@@ -98,5 +219,8 @@
     bottom: 0;
     color: #ddddddaa;
     font-size: 1.05rem;
+  }
+  .page3 h4 {
+    font-weight: 400;
   }
 </style>
