@@ -7,6 +7,7 @@
   import Android from './Routes/android.svelte';
   import AndroidLegacy from './Routes/android.legacy.svelte';
   import AndroidMirrors from './Routes/android.mirrors.svelte';
+  import AndroidSign from './Routes/android.sign.svelte';
   import Download from './Routes/download.svelte';
   import Acknowledgements from './Routes/acknowledgements.svelte';
   import baseUrl from './base';
@@ -106,6 +107,8 @@
     <Route path="/android/legacy"><AndroidLegacy /></Route>
     <Route path="/android/roblox-mirrors"><AndroidMirrors /></Route>
     <Route path="/android/legacy.html"><AndroidLegacy /></Route>
+    <Route path="/android/sign"><AndroidSign /></Route>
+    <Route path="/as"><AndroidSign /></Route>
     <Route path="/acknowledgements"><Acknowledgements /></Route>
     <Route path="{baseUrl}/"><Home /></Route>
     <Route path="{baseUrl}/dl"><Download /></Route>
@@ -115,6 +118,8 @@
     <Route path="{baseUrl}/android/legacy"><AndroidLegacy /></Route>
     <Route path="{baseUrl}/android/legacy.html"><AndroidLegacy /></Route>
     <Route path="{baseUrl}/android/roblox-mirrors"><AndroidMirrors /></Route>
+    <Route path="{baseUrl}/android/sign"><AndroidSign /></Route>
+    <Route path="{baseUrl}/as"><AndroidSign /></Route>
     <Route path="{baseUrl}/acknowledgements"><Acknowledgements /></Route>
   </div>
 </Router>

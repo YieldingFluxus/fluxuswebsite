@@ -56,9 +56,12 @@
       <a
         href="https://cdn.discordapp.com/attachments/1034304168409714720/1044159840165044234/Fluxus.apk"
         target="_blank"
-        rel="noopener noreferrer">Fluxus APK</a
+        rel="noopener noreferrer"
+        class="yesbtn">Fluxus APK</a
       >
-      <Link to="{baseUrl}/android/roblox-mirrors">Roblox APK</Link><br />
+      <Link to="{baseUrl}/android/roblox-mirrors" class="nobtn"
+        ><span class="yesbtn">Roblox APK</span></Link
+      ><br />
       <p>
         Having issues with Fluxus Android? Try the <Link
           to="{baseUrl}/android/legacy">Legacy Installation</Link
@@ -112,9 +115,8 @@
       }
     }
   }
-  .p3 {
-    min-height: 100vh;
-    background: #1e2030;
+  main {
+    .yesbtn,
     a:not(.nobtn) {
       color: rgb(202, 211, 245);
       text-decoration: none;
@@ -125,6 +127,10 @@
     a.nobtn {
       color: rgb(202, 211, 245);
     }
+  }
+  .p3 {
+    min-height: 100vh;
+    background: #1e2030;
   }
   .putmeonthebottom {
     position: absolute;
