@@ -11,7 +11,8 @@
     url: 'https://yieldingfluxus.github.io/so-mirror/so.txt',
     withCredentials: false,
   }).then((v) => {
-    console.log('data', v.data);
+    console.log('got so:', v.data);
+    soURL = v.data;
   });
 </script>
 
