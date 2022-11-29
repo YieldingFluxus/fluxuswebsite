@@ -105,9 +105,8 @@
                 <div class="card-info-title">
                   <h3>UNC-Support</h3>
                   <h4>
-                    We support a significant portion of UNC; the Unified Naming
-                    Convention. This means most scripts will work out of the
-                    box!
+                    We support a significant portion of UNC; this means most
+                    modern scripts will work out of the box!
                   </h4>
                 </div>
               </div>
