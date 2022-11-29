@@ -54,10 +54,11 @@
     <div>
       <h1>Resources</h1>
       <a
-        href="https://cdn.discordapp.com/attachments/1026465307683987537/1040821020384317490/Fluxus.apk"
+        href="https://cdn.discordapp.com/attachments/1034304168409714720/1044159840165044234/Fluxus.apk"
         target="_blank"
         rel="noopener noreferrer">Fluxus APK</a
-      ><br />
+      >
+      <Link to="{baseUrl}/android/roblox-mirrors">Roblox APK</Link><br />
       <p>
         Having issues with Fluxus Android? Try the <Link
           to="{baseUrl}/android/legacy">Legacy Installation</Link

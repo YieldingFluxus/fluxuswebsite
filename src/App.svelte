@@ -6,6 +6,7 @@
   import Favicon from './assets/logo.png';
   import Android from './Routes/android.svelte';
   import AndroidLegacy from './Routes/android.legacy.svelte';
+  import AndroidMirrors from './Routes/android.mirrors.svelte';
   import Download from './Routes/download.svelte';
   import Acknowledgements from './Routes/acknowledgements.svelte';
   import baseUrl from './base';
@@ -103,6 +104,7 @@
     <Route path="/android/install"><Android /></Route>
     <Route path="/android/install.html"><Android /></Route>
     <Route path="/android/legacy"><AndroidLegacy /></Route>
+    <Route path="/android/roblox-mirrors"><AndroidMirrors /></Route>
     <Route path="/android/legacy.html"><AndroidLegacy /></Route>
     <Route path="/acknowledgements"><Acknowledgements /></Route>
     <Route path="{baseUrl}/"><Home /></Route>
@@ -112,6 +114,7 @@
     <Route path="{baseUrl}/android/install.html"><Android /></Route>
     <Route path="{baseUrl}/android/legacy"><AndroidLegacy /></Route>
     <Route path="{baseUrl}/android/legacy.html"><AndroidLegacy /></Route>
+    <Route path="{baseUrl}/android/roblox-mirrors"><AndroidMirrors /></Route>
     <Route path="{baseUrl}/acknowledgements"><Acknowledgements /></Route>
   </div>
 </Router>
