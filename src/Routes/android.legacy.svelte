@@ -12,17 +12,27 @@
     withCredentials: false,
   })
     .then((v) => {
-      console.log('got so:', v.data);
-      soURL = v.data;
+      console.log('got so via flux.li:', v.data);
+      soURL = v.data || soURL;
     })
-    .catch(() => {
+    .catch((errFluxLi) => {
       axios({
         url: 'https://so-mirror.astolfo.gay/so.txt',
         withCredentials: false,
-      }).then((v) => {
-        console.log('got so via backup:', v.data);
-        soURL = v.data;
-      });
+      })
+        .then((v) => {
+          console.log('got so via backup:', v.data);
+          soURL = v.data || soURL;
+        })
+        .catch((errMirror) =>
+          console.error(
+            'Failed to get so.txt\nError on flux.li:',
+            errFluxLi,
+            '\nError on so-mirror:',
+            errMirror,
+            '\nFalling back to backup download page (' + soURL + ').'
+          )
+        );
     });
 </script>
 

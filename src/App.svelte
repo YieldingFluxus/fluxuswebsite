@@ -77,6 +77,26 @@
   fetch('https://fluxteam.net/external-files/discord.php')
     .then((resp) => resp.text())
     .then((resp) => (discord = `https://discord.gg/${resp}`));
+
+  let debounce = [];
+  setInterval(() => {
+    document.querySelectorAll('.cards').forEach((v) => {
+      if (debounce.includes(v)) return;
+      debounce.push(v);
+      // @ts-ignore
+      v.onmousemove = (e) => {
+        for (const card of document.getElementsByClassName('card')) {
+          const rect = card.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+          const c = card as any;
+
+          c.style.setProperty('--mouse-x', `${x}px`);
+          c.style.setProperty('--mouse-y', `${y}px`);
+        }
+      };
+    });
+  }, 500);
 </script>
 
 <Router {url}>

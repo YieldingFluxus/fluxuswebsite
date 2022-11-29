@@ -6,25 +6,6 @@
   import Icon from '../assets/faviconbutpng.png';
   import baseUrl from '../base';
   const shouldDisableUI = navigator.userAgent.includes('iPhone');
-  let debounce = [];
-  setInterval(() => {
-    document.querySelectorAll('.cards').forEach((v) => {
-      if (debounce.includes(v)) return;
-      debounce.push(v);
-      // @ts-ignore
-      v.onmousemove = (e) => {
-        for (const card of document.getElementsByClassName('card')) {
-          const rect = card.getBoundingClientRect(),
-            x = e.clientX - rect.left,
-            y = e.clientY - rect.top;
-          const c = card as any;
-
-          c.style.setProperty('--mouse-x', `${x}px`);
-          c.style.setProperty('--mouse-y', `${y}px`);
-        }
-      };
-    });
-  }, 500);
 </script>
 
 <main class="index">
