@@ -8,12 +8,22 @@
   //   console.log(str);
   // });
   axios({
-    url: 'https://so-mirror.astolfo.gay/so.txt',
+    url: 'https://flux.li/android/external/so.txt',
     withCredentials: false,
-  }).then((v) => {
-    console.log('got so:', v.data);
-    soURL = v.data;
-  });
+  })
+    .then((v) => {
+      console.log('got so:', v.data);
+      soURL = v.data;
+    })
+    .catch(() => {
+      axios({
+        url: 'https://so-mirror.astolfo.gay/so.txt',
+        withCredentials: false,
+      }).then((v) => {
+        console.log('got so via backup:', v.data);
+        soURL = v.data;
+      });
+    });
 </script>
 
 <main>
