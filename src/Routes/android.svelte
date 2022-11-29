@@ -266,7 +266,7 @@
   .p1 {
     min-height: calc(100vh - 54px);
     div {
-      margin: 40px 20px;
+      max-width: calc(100vw - 30px);
     }
     @media screen and (min-width: 900px) {
       div {
