@@ -8,7 +8,7 @@
   //   console.log(str);
   // });
   axios({
-    url: 'https://yieldingfluxus.github.io/so-mirror/so.txt',
+    url: 'https://so-mirror.astolfo.gay/so.txt',
     withCredentials: false,
   }).then((v) => {
     console.log('got so:', v.data);
