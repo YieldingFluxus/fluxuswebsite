@@ -14,8 +14,8 @@
     <div>
       <h1>A Unique Mobile Experience.</h1>
       <p>
-        Crafted by industry leaders, Fluxus Android is the ultimate android
-        experience.
+        Crafted by industry leaders, Fluxus Android is the ultimate Roblox
+        Exploiting experience for your pocket.
       </p>
     </div>
     <div class="putmeonthebottom">
@@ -266,6 +266,14 @@
   }
   .p1 {
     min-height: calc(100vh - 54px);
+    div {
+      margin: 40px 20px;
+    }
+    @media screen and (min-width: 900px) {
+      div {
+        max-width: 40vw;
+      }
+    }
   }
   .p2 {
     min-height: 100vh;
@@ -299,6 +307,9 @@
     a.nobtn {
       color: rgb(202, 211, 245);
     }
+  }
+  .p1 .putmeonthebottom {
+    bottom: -42px;
   }
   .putmeonthebottom {
     position: absolute;
