@@ -1,10 +1,18 @@
 <script lang="ts">
-  import baseUrl from '../base';
-
-  let soURL = '';
-  fetch('https://flux.li/android/external/so.txt')
-    .then((v) => v.text())
-    .then((v) => (soURL = v));
+  import axios from 'axios';
+  let soURL = 'https://yieldingfluxus.github.io/so-mirror/';
+  // fetch('https://flux.li/android/external/so.txt', {
+  //   mode: 'no-cors',
+  // }).then(async (v) => {
+  //   const str = await v.text();
+  //   console.log(str);
+  // });
+  axios({
+    url: 'https://yieldingfluxus.github.io/so-mirror/so.txt',
+    withCredentials: false,
+  }).then((v) => {
+    console.log('data', v.data);
+  });
 </script>
 
 <main>
