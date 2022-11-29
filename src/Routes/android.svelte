@@ -307,9 +307,9 @@
       color: rgb(202, 211, 245);
     }
   }
-  .p1 .putmeonthebottom {
-    bottom: -42px;
-  }
+  // .p1 .putmeonthebottom {
+  //   bottom: -42px;
+  // }
   .putmeonthebottom {
     position: absolute;
     bottom: 0;
