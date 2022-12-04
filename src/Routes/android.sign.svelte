@@ -23,7 +23,7 @@
       <video
         src="{baseUrl}/parse.mp4"
         controls
-        style="max-height:75vh;display:block;margin-bottom:8px"
+        style="max-height:75vh; max-width: 95vw;display:block;margin-bottom:8px"
       />
     </div>
   </div>
