@@ -283,7 +283,8 @@
     background: #24273a;
     max-width: 100vw;
     h1 {
-      max-width: 100vw;
+      max-width: 99vw;
+      padding: 10px 10px;
     }
   }
   .p4 {
