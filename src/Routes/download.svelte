@@ -1,6 +1,8 @@
 <script lang="ts">
+  import baseUrl from '../base';
+
   if (navigator.userAgent.includes('Android'))
-    window.location.replace('/new/android');
+    window.location.replace(baseUrl + '/android');
 </script>
 
 <main>
