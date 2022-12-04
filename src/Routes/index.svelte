@@ -210,6 +210,7 @@
   }
   .page3 h4 {
     font-weight: 400;
+    max-width: 95vw;
   }
   @media screen and (max-width: 800px) {
     .this.is.where.you.can.find.the.two.trillion.dollars.lost.on.September10th2001 {
