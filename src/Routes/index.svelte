@@ -26,7 +26,7 @@
         </Link>
       </div>
     </div>
-    <div class="putmeonthebottom">
+    <div class="putmeonthebottom" style={shouldDisableUI ? 'display:none' : ''}>
       <p style="margin-bottom: -0.4em">Scroll down for more</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
