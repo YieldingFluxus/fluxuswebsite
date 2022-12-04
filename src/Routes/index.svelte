@@ -216,7 +216,7 @@
       display: none;
     }
   }
-  @media screen and (max-height: 700px) {
+  @media screen and (max-height: 675px) and (max-width: 400px) {
     .this.is.why.September11th2001.happened {
       display: none;
     }
