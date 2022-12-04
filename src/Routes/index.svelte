@@ -170,7 +170,11 @@
     </div>
   </div>
   <div class="page4">
-    <img src={aui} alt="" style={shouldDisableUI ? 'display:none' : ''} />
+    <img
+      src={aui}
+      alt=""
+      class="this is where you can find the two trillion dollars lost on September10th2001"
+    />
     <div class="ok" style="position: relative; z-index: 50;">
       <h1>
         <underline
@@ -203,5 +207,17 @@
   }
   .page3 h4 {
     font-weight: 400;
+  }
+  @media screen and (max-width: 800px) {
+    .this.is.where.you.can.find.the.two.trillion.dollars.lost.on.September10th2001 {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .this.is.where.you.can.find.the.two.trillion.dollars.lost.on.September10th2001
+      + .ok {
+      text-align: center;
+      padding: 10px 10px;
+    }
   }
 </style>
