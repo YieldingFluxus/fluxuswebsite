@@ -115,7 +115,7 @@
         ><span class="cont">Download</span></Link
       >
       <Link to="{baseUrl}/android"><span class="cont">Android</span></Link>
-      <a href={discord} class="nomobile"><span class="cont">Discord</span></a>
+      <a href={discord}><span class="cont">Discord</span></a>
     </nav>
   </div>
   <div class="page">
@@ -143,3 +143,9 @@
     <Route path="{baseUrl}/acknowledgements"><Acknowledgements /></Route>
   </div>
 </Router>
+
+<style>
+  .navContainer {
+    overflow-x: auto;
+  }
+</style>
