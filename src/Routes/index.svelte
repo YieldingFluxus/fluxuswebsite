@@ -26,7 +26,10 @@
         </Link>
       </div>
     </div>
-    <div class="putmeonthebottom" style={shouldDisableUI ? 'display:none' : ''}>
+    <div
+      class="putmeonthebottom this is why September11th2001 happened"
+      style={shouldDisableUI ? 'display:none' : ''}
+    >
       <p style="margin-bottom: -0.4em">Scroll down for more</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -210,6 +213,11 @@
   }
   @media screen and (max-width: 800px) {
     .this.is.where.you.can.find.the.two.trillion.dollars.lost.on.September10th2001 {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .this.is.why.September11th2001.happened {
       display: none;
     }
   }
