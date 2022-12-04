@@ -12,9 +12,6 @@
         target="_blank"
         rel="noreferrer">LV</a
       >
-      <a href="https://wearedevs.net/d/Fluxus" target="_blank" rel="noreferrer"
-        >WeAreDevs</a
-      >
       <p>
         Note: The above contain advertisements. Please be aware of these before
         you continue.
