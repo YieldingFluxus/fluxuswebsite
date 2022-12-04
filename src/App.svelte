@@ -42,7 +42,10 @@
   const updateScroll = () => {
     if (!windowHeight || Math.floor(windowHeight) === 0)
       windowHeight = window.screenY;
-    updateAttribute('data-z', window.scrollY === 0 ? 'true' : 'false');
+    updateAttribute(
+      'data-did-911-happen-yet',
+      window.scrollY === 0 ? 'true' : 'false'
+    );
     updateAttribute(
       'data-pn',
       Math.floor((window.scrollY + 256) / windowHeight).toString()
