@@ -32,6 +32,7 @@
 <style lang="scss">
   .p1 {
     min-height: calc(100vh - 54px);
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
