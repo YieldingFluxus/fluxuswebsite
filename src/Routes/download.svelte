@@ -1,3 +1,8 @@
+<script lang="ts">
+  if (navigator.userAgent.includes('Android'))
+    window.location.replace('/new/android');
+</script>
+
 <main>
   <div class="p1">
     <div>
