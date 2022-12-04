@@ -51,11 +51,12 @@
     position: relative;
 
     background: #191a27;
-
+  }
+  .p1,
+  .p2 {
     h1 {
       color: rgb(141, 115, 176);
     }
-
     p {
       font-weight: 400;
       color: #a5adcb;

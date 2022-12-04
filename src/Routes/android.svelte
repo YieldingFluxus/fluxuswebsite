@@ -277,6 +277,10 @@
   .p2 {
     min-height: 100vh;
     background: #1e2030;
+    h1 {
+      max-width: 99vw;
+      padding: 10px 10px;
+    }
   }
   .p3 {
     min-height: 100vh;
