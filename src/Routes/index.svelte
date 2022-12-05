@@ -17,7 +17,12 @@
           <span class="c">A Fresh<br />Execution Experience.</span>
         </h1>
         <p class="👌👌👌 👌">Unrivaled Power, Unbeatable Pricepoint<br />​</p>
-        <Link to="{baseUrl}/dl" class="active">
+        <Link
+          to="{baseUrl}/{navigator.userAgent.includes('Android')
+            ? 'android'
+            : 'dl'}"
+          class="active"
+        >
           <span class="text">Download now</span><span
             class="material-symbols-outlined icon"
           >
