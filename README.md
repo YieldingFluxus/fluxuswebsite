@@ -5,4 +5,4 @@ Live at [fluxteam.net](https://fluxteam.net) & in development at [fuuuux.astolfo
 
 Fully Open Source.
 
-##### *You must credit if you use any work in this repository in your own works.*
+###### *You must credit if you use any work in this repository in your own works.*
