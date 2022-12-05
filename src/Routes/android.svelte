@@ -33,117 +33,119 @@
   <div class="p2" id="android-normal-feature-list">
     <div>
       <h1>Why pick Fluxus Android?</h1>
-      <div class="cards">
-        <div
-          class="card"
-          on:click={openAndroidBenchmark}
-          on:keypress={openAndroidBenchmark}
-          style="cursor: auto"
-        >
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-bolt" />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>Performant</h3>
-                  <h4>
-                    Fluxus Android is powered by the Luau Source directly,
-                    allowing us to reach insanely fast performance.
-                  </h4>
+      <div style="display:flex">
+        <div class="cards">
+          <div
+            class="card"
+            on:click={openAndroidBenchmark}
+            on:keypress={openAndroidBenchmark}
+            style="cursor: auto"
+          >
+            <div class="card-content">
+              <div class="card-image">
+                <i class="fa-solid fa-bolt" />
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-title">
+                    <h3>Performant</h3>
+                    <h4>
+                      Fluxus Android is powered by the Luau Source directly,
+                      allowing us to reach insanely fast performance.
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card" on:click={openDocs} on:keypress={openDocs}>
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-code" />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>Extensive APIs</h3>
-                  <h4>
-                    Fluxus has many custom APIs, allowing you to do things like
-                    integrate into the main UI. You can click here for
-                    documentation.
-                  </h4>
+          <div class="card" on:click={openDocs} on:keypress={openDocs}>
+            <div class="card-content">
+              <div class="card-image">
+                <i class="fa-solid fa-code" />
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-title">
+                    <h3>Extensive APIs</h3>
+                    <h4>
+                      Fluxus has many custom APIs, allowing you to do things
+                      like integrate into the main UI. You can click here for
+                      documentation.
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card" style="cursor: auto">
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-key" />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>Short Key System</h3>
-                  <h4>
-                    Our Key System consists of only two linkvertises, and keys
-                    last 24 hours! You can also buy Premium to remove the key
-                    system!
-                  </h4>
+          <div class="card" style="cursor: auto">
+            <div class="card-content">
+              <div class="card-image">
+                <i class="fa-solid fa-key" />
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-title">
+                    <h3>Short Key System</h3>
+                    <h4>
+                      Our Key System consists of only two linkvertises, and keys
+                      last 24 hours! You can also buy Premium to remove the key
+                      system!
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card" on:click={openUNC} on:keypress={openUNC}>
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-check" />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>UNC-Support</h3>
-                  <h4>
-                    We support a significant portion of UNC; this means most
-                    modern scripts will work out of the box!
-                  </h4>
+          <div class="card" on:click={openUNC} on:keypress={openUNC}>
+            <div class="card-content">
+              <div class="card-image">
+                <i class="fa-solid fa-check" />
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-title">
+                    <h3>UNC-Support</h3>
+                    <h4>
+                      We support a significant portion of UNC; this means most
+                      modern scripts will work out of the box!
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card" style="cursor: auto">
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-handshake" />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>Fluxus Quality</h3>
-                  <h4>
-                    We make sure every product of ours is extremely
-                    high-quality, giving you the ultimate experience.
-                  </h4>
+          <div class="card" style="cursor: auto">
+            <div class="card-content">
+              <div class="card-image">
+                <i class="fa-solid fa-handshake" />
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-title">
+                    <h3>Fluxus Quality</h3>
+                    <h4>
+                      We make sure every product of ours is extremely
+                      high-quality, giving you the ultimate experience.
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card" style="cursor: auto">
-          <div class="card-content">
-            <div class="card-image">
-              <i class="fa-solid fa-circle-up" />
-            </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
-                  <h3>Fast Updates</h3>
-                  <h4>
-                    No more waiting for updates; Most of the time, Fluxus
-                    Android updates within under an hour.
-                  </h4>
+          <div class="card" style="cursor: auto">
+            <div class="card-content">
+              <div class="card-image">
+                <i class="fa-solid fa-circle-up" />
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-title">
+                    <h3>Fast Updates</h3>
+                    <h4>
+                      No more waiting for updates; Most of the time, Fluxus
+                      Android updates within under an hour.
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -221,6 +223,20 @@
 </main>
 
 <style lang="scss">
+  main {
+    overflow: hidden;
+  }
+  @media screen and (max-width: 1000px) {
+    .cards {
+      margin-bottom: 40px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .cards {
+      margin: 10px 10px !important;
+      margin-bottom: 40px !important;
+    }
+  }
   // .p1 {
   //   img {
   //     max-height: 50vh;
