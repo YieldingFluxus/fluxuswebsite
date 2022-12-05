@@ -33,7 +33,7 @@
   <div class="p2" id="android-normal-feature-list">
     <div>
       <h1>Why pick Fluxus Android?</h1>
-      <div style="display:flex">
+      <div style="display:flex;margin-bottom: 40px;" class="cardcont">
         <div class="cards">
           <div
             class="card"
