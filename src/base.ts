@@ -1,2 +1,2 @@
-export const baseUrl = '/new'
+export const baseUrl = '/'
 export default baseUrl
