@@ -169,7 +169,7 @@
     <div>
       <h1>Installation</h1>
       <a
-        href="https://cdn.discordapp.com/attachments/1034304168409714720/1044159840165044234/Fluxus.apk"
+        href="https://linkvertise.com/530799/fluxus-android-download/1"
         target="_blank"
         rel="noopener noreferrer"
         class="yesbtn">Fluxus APK</a
