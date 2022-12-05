@@ -190,7 +190,13 @@
         pocket. For free.
       </p>
       <br />
-      <Link to="{baseUrl}/android" class="active">
+      <Link
+        to="{baseUrl}/android"
+        class="active"
+        on:click={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         <span class="nomobile"
           ><span class="text">Get Fluxus Android</span>
         </span><span class="material-symbols-outlined icon">
