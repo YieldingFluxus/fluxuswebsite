@@ -174,14 +174,27 @@
         rel="noopener noreferrer"
         class="yesbtn">Fluxus APK</a
       >
+
       <Link to="{baseUrl}/android/roblox-mirrors" class="nobtn"
         ><span class="yesbtn">Roblox APK</span></Link
       >
-      <a href="#android-normal-instruction-video">Instructions</a><br /><br />
+      
+      <a href="#android-normal-instruction-video">Instructions</a><br /><br /><br />
+
+      <a
+        onClick="alert('Join our discord at discord.gg/NNfqjBz9J6 for help!')"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="yesbtn">Help</a
+      >
+
       <p>
+        <b>Make sure you use APK Combo / APK Pure and NOT the Play Store!</b> <br/><br/>
+
         Having issues with Fluxus Android? Try the <Link
           to="{baseUrl}/android/legacy">Legacy Installation</Link
         >
+        
       </p>
       <p>
         P.S. You can buy premium <a
@@ -192,6 +205,7 @@
         > to skip the key system.
       </p>
     </div>
+    
     <div class="putmeonthebottom">
       <p style="margin-bottom: -0.4em">Instructions</p>
       <svg
