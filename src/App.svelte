@@ -10,6 +10,7 @@
   import AndroidSign from './Routes/android.sign.svelte';
   import Download from './Routes/download.svelte';
   import WrongDownload from './Routes/android.playstore.svelte';
+  import WrongDownload2 from './Routes/android.wronginstall.svelte';
   import Acknowledgements from './Routes/acknowledgements.svelte';
   import baseUrl from './base';
 
@@ -138,6 +139,9 @@
     <Route path="/android/errors/wrong"><WrongDownload /></Route>
     <Route path="/android/errors/wrong.html"><WrongDownload /></Route>
 
+    <Route path="/android/errors/wrong_two"><WrongDownload2 /></Route>
+    <Route path="/android/errors/wrong_two.html"><WrongDownload2 /></Route>
+
     <Route path="{baseUrl}/"><Home /></Route>
     <Route path="{baseUrl}/dl"><Download /></Route>
     <Route path="{baseUrl}/android"><Android /></Route>
@@ -150,8 +154,8 @@
     <Route path="{baseUrl}/as"><AndroidSign /></Route>
     <Route path="{baseUrl}/acknowledgements"><Acknowledgements /></Route>
 
-    <Route path="{baseUrl}/android/errors/wrong"><WrongDownload /></Route>
-    <Route path="{baseUrl}/android/errors/wrong.html"><WrongDownload /></Route>
+    <Route path="{baseUrl}/android/errors/wrong_two"><WrongDownload2 /></Route>
+    <Route path="{baseUrl}/android/errors/wrong_two.html"><WrongDownload2 /></Route>
 
   </div>
 </Router>
