@@ -90,9 +90,10 @@
       <h1>Resources</h1>
       <a
         href="https://cdn.discordapp.com/attachments/1036294505646796891/1037543606967345162/MT_Manager.apk"
+        class="normal"
         target="_blank"
         rel="noopener noreferrer">MT Manager</a
-      ><br /><br />
+      >
       <a href={soURL} target="_blank" rel="noopener noreferrer"
         >libFluxusAndroid.so</a
       ><br /><br />

@@ -227,11 +227,20 @@
         Scroll up for links.
       </p>
       <!-- svelte-ignore a11y-media-has-caption -->
-      <video
-        src="{baseUrl}/android-current.mp4"
-        controls
-        style="/*border-radius: 16px;*/"
+
+
+      <iframe
+        width="1024"
+        height="576"
+        style="max-height: 75vh; max-width: 75vw"
+        src="https://www.youtube.com/embed/d6V2rHDSJM4"
+        title="[MOBILE] How to install Fluxus Android - FULL TUTORIAL"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
       />
+
+
     </div>
   </div>
 </main>
