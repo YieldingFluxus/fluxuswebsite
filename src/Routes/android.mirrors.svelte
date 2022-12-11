@@ -2,11 +2,20 @@
   <div class="p1">
     <div>
       <h1>Download Roblox Android</h1>
+
+      <p>You can also install Roblox from the Play Store!</p>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.roblox.client&hl=en_US&gl=US"
+        target="_blank"
+        rel="noreferrer">Play Store</a
+      >
+
       <a
         href="https://apkpure.com/roblox-for-android/com.roblox.client/download"
         target="_blank"
         rel="noreferrer">APKPure</a
       >
+
       <a
         href="https://apkcombo.com/roblox/com.roblox.client/download/apk"
         target="_blank"

@@ -88,6 +88,8 @@
     </div>
     <div>
       <h1>Resources</h1>
+
+      <p>Make sure you delete the arm64-v8a folder and install libFluxusAndroid.so into armeabi-v7a! If you forget this, your application will crash.</p>
       <a
         href="https://cdn.discordapp.com/attachments/1036294505646796891/1037543606967345162/MT_Manager.apk"
         class="normal"
