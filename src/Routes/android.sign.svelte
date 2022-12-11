@@ -4,27 +4,31 @@
 
 <main>
   <div class="p1">
-    <div>
-      <h1>Fluxus Android Sign Issue</h1>
-      <p>Simply follow these steps:</p>
-      <ol>
-        <li>Run the Fluxus Installer, wait for it to show an error.</li>
-        <li>
-          Install <a
-            href="https://cdn.discordapp.com/attachments/1036294505646796891/1037543606967345162/MT_Manager.apk"
-            class="normal"
-            target="_blank"
-            rel="noopener noreferrer">MT Manager</a
-          >
-        </li>
-        <li>Follow the instructions in the video below.</li>
-      </ol>
-      <!-- svelte-ignore a11y-media-has-caption -->
-      <video
-        src="{baseUrl}/parse.mp4"
-        controls
-        style="max-height:75vh; max-width: 95vw;display:block;margin-bottom:8px"
-      />
+    <div
+      style="display: flex; align-items: center; justify-content: center; max-width: 100vw;"
+    >
+      <div style="max-width: 90vw;">
+        <h1>Fluxus Android Sign Issue</h1>
+        <p>Simply follow these steps:</p>
+        <ol style="max-width: 70vw;">
+          <li>Run the Fluxus Installer, wait for it to show an error.</li>
+          <li>
+            Install <a
+              href="https://cdn.discordapp.com/attachments/1036294505646796891/1037543606967345162/MT_Manager.apk"
+              class="normal"
+              target="_blank"
+              rel="noopener noreferrer">MT Manager</a
+            >
+          </li>
+          <li>Follow the instructions in the video below.</li>
+        </ol>
+        <!-- svelte-ignore a11y-media-has-caption -->
+        <video
+          src="{baseUrl}/parse.mp4"
+          controls
+          style="max-height:75vh; max-width: 100%;display:block;margin-bottom:8px"
+        />
+      </div>
     </div>
   </div>
 </main>
