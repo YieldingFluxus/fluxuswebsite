@@ -182,7 +182,7 @@
       <a href="#android-normal-instruction-video">Instructions</a><br /><br /><br />
 
       <a
-        onClick="alert('Join our discord at discord.gg/NNfqjBz9J6 for help!')"
+        onClick="alert('Join our discord at https://flux.li/discord.php for help!')"
         target="_blank"
         rel="noopener noreferrer"
         class="yesbtn">Help</a
@@ -198,7 +198,7 @@
       </p>
       <p>
         P.S. You can buy premium <a
-          href="https://discord.gg/V7axDCK3q8"
+          href="https://flux.li/discord.php"
           target="_blank"
           rel="noopener noreferrer"
           class="nobtn">in our discord</a

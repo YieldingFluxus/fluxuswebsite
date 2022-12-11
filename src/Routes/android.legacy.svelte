@@ -36,7 +36,14 @@
     });
 </script>
 
+
 <main>
+  <script>    
+    function copysmali() 
+    {
+      navigator.clipboard.writeText("const-string v0, \"FluxusAndroid\"\ninvoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V");
+    }
+  </script>
   <div class="p1">
     <div>
       <h1>Legacy Installation</h1>
@@ -65,8 +72,8 @@
         Android.
       </p>
       <iframe
-        src="https://www.youtube.com/embed/eafNvvjVUhY?t=24"
-        title="fluxus android legacy install"
+        src="https://www.youtube.com/embed/l6P-QL_4U5w"
+        title="YouTube video player"
         frameborder="0"
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
         allowfullscreen
@@ -90,11 +97,9 @@
       <h1>Resources</h1>
 
       <p>Make sure you delete the arm64-v8a folder and install libFluxusAndroid.so into armeabi-v7a! If you forget this, your application will crash.</p>
-      <a
-        href="https://cdn.discordapp.com/attachments/1036294505646796891/1037543606967345162/MT_Manager.apk"
-        class="normal"
-        target="_blank"
-        rel="noopener noreferrer">MT Manager</a
+      <button
+        onclick="window.open('https://cdn.discordapp.com/attachments/1034304168409714720/1051628440924729394/MT_Manager.apk')"
+        rel="noopener noreferrer">MT Manager</button
       >
       <a href={soURL} target="_blank" rel="noopener noreferrer"
         >libFluxusAndroid.so</a
@@ -112,13 +117,13 @@
         frameborder="0"
       />
       <br />
+      <button onclick="copysmali();">Copy Smali Code</button>
       <p>
-        P.S. You can buy premium <a
-          href="https://discord.gg/V7axDCK3q8"
+        P.S. If you need help <a
+          href="https://flux.li/discord.php"
           target="_blank"
           rel="noopener noreferrer"
-          class="nobtn">in our discord</a
-        > to skip the key system.
+          class="nobtn">join our discord server</a> 
       </p>
     </div>
   </div>
@@ -172,6 +177,16 @@
       /*border-radius: 16px;*/
     }
     a.nobtn {
+      color: rgb(202, 211, 245);
+    }
+    button:not(.nobtnn) {
+      color: rgb(202, 211, 245);
+      text-decoration: none;
+      padding: 8px 8px;
+      background: rgb(141, 115, 176);
+      /*border-radius: 16px;*/
+    }
+    button.nobtnn {
       color: rgb(202, 211, 245);
     }
   }
