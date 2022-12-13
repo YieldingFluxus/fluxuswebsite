@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Link } from 'svelte-routing';
   import baseUrl from '../base';
+  import translate from '../i18n';
   const openAndroidBenchmark = () => {};
   const openDocs = () =>
     window.open(
@@ -12,14 +13,15 @@
 <main>
   <div class="p1" id="android-normal-top">
     <div>
-      <h1>A Unique Mobile Experience.</h1>
+      <h1>{translate('A Unique Mobile Experience.')}</h1>
       <p>
-        Crafted by industry leaders, Fluxus Android is the ultimate Roblox
-        Exploiting experience for your pocket.
+        {translate(
+          'Crafted by industry leaders, Fluxus Android is the ultimate Roblox Exploiting experience for your pocket.'
+        )}
       </p>
     </div>
     <div class="putmeonthebottom">
-      <p style="margin-bottom: -0.4em">Features</p>
+      <p style="margin-bottom: -0.4em">{translate('Features')}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="48"
@@ -32,7 +34,7 @@
   </div>
   <div class="p2" id="android-normal-feature-list">
     <div>
-      <h1>Why pick Fluxus Android?</h1>
+      <h1>{translate('Why pick Fluxus Android?')}</h1>
       <div style="display:flex;margin-bottom: 40px;" class="cardcont">
         <div class="cards">
           <div
@@ -48,10 +50,11 @@
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-title">
-                    <h3>Performant</h3>
+                    <h3>{translate('Performant')}</h3>
                     <h4>
-                      Fluxus Android is powered by the Luau Source directly,
-                      allowing us to reach insanely fast performance.
+                      {translate(
+                        'Fluxus Android is powered by the Luau Source directly, allowing us to reach insanely fast performance.'
+                      )}
                     </h4>
                   </div>
                 </div>
@@ -66,11 +69,11 @@
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-title">
-                    <h3>Extensive APIs</h3>
+                    <h3>{translate('Extensive APIs')}</h3>
                     <h4>
-                      Fluxus has many custom APIs, allowing you to do things
-                      like integrate into the main UI. You can click here for
-                      documentation.
+                      {translate(
+                        'Fluxus has many custom APIs, allowing you to do things like integrate into the main UI. You can click here for documentation.'
+                      )}
                     </h4>
                   </div>
                 </div>
@@ -85,11 +88,11 @@
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-title">
-                    <h3>Short Key System</h3>
+                    <h3>{translate('Short Key System')}</h3>
                     <h4>
-                      Our Key System consists of only two linkvertises, and keys
-                      last 24 hours! You can also buy Premium to remove the key
-                      system!
+                      {translate(
+                        'Our Key System consists of only three linkvertises, and keys last 24 hours! You can also buy Premium to remove the key system!'
+                      )}
                     </h4>
                   </div>
                 </div>
@@ -104,10 +107,11 @@
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-title">
-                    <h3>UNC-Support</h3>
+                    <h3>{translate('UNC-Support')}</h3>
                     <h4>
-                      We support a significant portion of UNC; this means most
-                      modern scripts will work out of the box!
+                      {translate(
+                        'We support a significant portion of UNC; this means most modern scripts will work out of the box!'
+                      )}
                     </h4>
                   </div>
                 </div>
@@ -122,10 +126,11 @@
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-title">
-                    <h3>Fluxus Quality</h3>
+                    <h3>{translate('Fluxus Quality')}</h3>
                     <h4>
-                      We make sure every product of ours is extremely
-                      high-quality, giving you the ultimate experience.
+                      {translate(
+                        'We make sure every product of ours is extremely high-quality, giving you the ultimate experience.'
+                      )}
                     </h4>
                   </div>
                 </div>
@@ -140,10 +145,11 @@
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-title">
-                    <h3>Fast Updates</h3>
+                    <h3>{translate('Fast Updates')}</h3>
                     <h4>
-                      No more waiting for updates; Most of the time, Fluxus
-                      Android updates within under an hour.
+                      {translate(
+                        'No more waiting for updates; Most of the time, Fluxus Android updates within under an hour.'
+                      )}
                     </h4>
                   </div>
                 </div>
@@ -154,7 +160,7 @@
       </div>
     </div>
     <div class="putmeonthebottom">
-      <p style="margin-bottom: -0.4em">Installation</p>
+      <p style="margin-bottom: -0.4em">{translate('Installation')}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="48"
@@ -167,7 +173,7 @@
   </div>
   <div class="p3" id="android-normal-installation-resources">
     <div>
-      <h1>Installation</h1>
+      <h1>{translate('Installation')}</h1>
       <a
         href="https://linkvertise.com/530799/fluxus-android-download/1"
         target="_blank"
@@ -178,36 +184,37 @@
       <Link to="{baseUrl}/android/roblox-mirrors" class="nobtn"
         ><span class="yesbtn">Roblox APK</span></Link
       >
-      
-      <a href="#android-normal-instruction-video">Instructions</a><br /><br /><br />
+
+      <a href="#android-normal-instruction-video">{translate('Instructions')}</a
+      ><br /><br /><br />
 
       <a
-        onClick="alert('Join our discord at https://flux.li/discord.php for help!')"
+        href="https://flux.li/discord.php"
         target="_blank"
         rel="noopener noreferrer"
-        class="yesbtn">Help</a
+        class="yesbtn">{translate('Help')}</a
       >
 
       <p>
-        <b>Make sure you use APK Combo / APK Pure and NOT the Play Store!</b> <br/><br/>
-
-        Having issues with Fluxus Android? Try the <Link
-          to="{baseUrl}/android/legacy">Legacy Installation</Link
+        {translate('Having issues with Fluxus Android? Try the')}
+        <Link to="{baseUrl}/android/legacy"
+          >{translate('Legacy Installation')}</Link
         >
-        
       </p>
       <p>
-        P.S. You can buy premium <a
+        {translate('P.S. You can buy premium')}
+        <a
           href="https://flux.li/discord.php"
           target="_blank"
           rel="noopener noreferrer"
-          class="nobtn">in our discord</a
-        > to skip the key system.
+          class="nobtn">{translate('in our discord')}</a
+        >
+        {translate('to skip the key system.')}
       </p>
     </div>
-    
+
     <div class="putmeonthebottom">
-      <p style="margin-bottom: -0.4em">Instructions</p>
+      <p style="margin-bottom: -0.4em">{translate('Instructions')}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="48"
@@ -220,27 +227,25 @@
   </div>
   <div class="p4" id="android-normal-instruction-video">
     <div>
-      <h1>Instructions</h1>
+      <h1>{translate('Instructions')}</h1>
       <p>
-        Below, you can find a video with instructions on downloading Fluxus
-        Android.<br />
-        Scroll up for links.
+        {translate(
+          'Below, you can find a video with instructions on downloading Fluxus Android.'
+        )}<br />
+        {translate('Scroll up for links.')}
       </p>
       <!-- svelte-ignore a11y-media-has-caption -->
-
 
       <iframe
         width="1024"
         height="576"
         style="max-height: 75vh; max-width: 75vw"
-        src="https://www.youtube.com/embed/d6V2rHDSJM4"
+        src={translate('https://www.youtube.com/embed/d6V2rHDSJM4')}
         title="[MOBILE] How to install Fluxus Android - FULL TUTORIAL"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
-
-
     </div>
   </div>
 </main>
@@ -260,6 +265,9 @@
       margin-bottom: 40px !important;
     }
   }
+  // .cards {
+  //   max-width: 995px !important;
+  // }
   // .p1 {
   //   img {
   //     max-height: 50vh;
@@ -333,11 +341,11 @@
   .p4 {
     min-height: 100vh;
     background: #1e2030;
-    video {
+    iframe {
       max-width: 50vw;
     }
     @media screen and (max-width: 1000px) {
-      video {
+      iframe {
         max-width: 75vw;
       }
     }

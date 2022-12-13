@@ -37,6 +37,33 @@ export const langData: Record<string, Partial<i18nData>> = {
     'Note: The above contain advertisements. Please be aware of these before you continue.': 'Hinweis: Die folgenden Seiten enthalten Werbung. Bitte beachten Sie diese, bevor Sie fortfahren.',
     'Need Help?': 'Brauchen Sie Hilfe?',
     'https://www.youtube.com/embed/MqBjGEo289Q': 'https://www.youtube.com/embed/MqBjGEo289Q', // Help Video
+    // Android Page
+    'A Unique Mobile Experience.': 'Ein Einzigartiges Mobile Erlebnis.',
+    'Crafted by industry leaders, Fluxus Android is the ultimate Roblox Exploiting experience for your pocket.': 'Von Industrieführern entwickelt, Fluxus Android ist das ultimative Roblox Exploiting-Erlebnis für die Hosentasche.',
+    'Features': 'Besonderheiten',
+    'Why pick Fluxus Android?': 'Warum Fluxus Android?',
+    'Performant': 'Leistungsfähig',
+    'Fluxus Android is powered by the Luau Source directly, allowing us to reach insanely fast performance.': 'Fluxus Android wird mit dem besten Execution Kern auf dem Markt betrieben, sodass wir eine extrem schnelle Leistung erreichen.',
+    'Extensive APIs': 'Umfangsreiche APIs',
+    'Fluxus has many custom APIs, allowing you to do things like integrate into the main UI. You can click here for documentation.': 'Fluxus enthält viele einzelartige APIs, die es Ihnen erleichtern, bessere Scripts zu entwickeln.',
+    'Short Key System': 'Kurzes Key-System',
+    'Our Key System consists of only three linkvertises, and keys last 24 hours! You can also buy Premium to remove the key system!': 'Unser Keysystem besteht aus nur drei Linkwerbeseiten! Sie können auch Premium kaufen, um das Key System komplett zu entfernen!',
+    'UNC-Support': 'UNC-Support',
+    'We support a significant portion of UNC; this means most modern scripts will work out of the box!': 'Wir unterstützen einen großen Teil von UNC; das bedeutet, dass die meisten modernen Scripts direkt nach der Installation funktionieren!',
+    'Fluxus Quality': 'Fluxus Qualität',
+    'We make sure every product of ours is extremely high-quality, giving you the ultimate experience.': 'Wir stellen sicher, dass jedes unserer Produkte von höchster Qualität ist, um Ihnen das ultimative Erlebnis zu ermöglichen.',
+    'No more waiting for updates; Most of the time, Fluxus Android updates within under an hour.': 'Nie wieder auf Updates warten: Fluxus Android aktualisiert sich normalerweise innerhalb von unter einer Stunde.',
+    'Installation': 'Installation',
+    'Instructions': 'Anleitungen',
+    'Help': 'Hilfe',
+    'Having issues with Fluxus Android? Try the': 'Probleme mit der Fluxus Android Installation? Probieren Sie die',
+    'Legacy Installation': 'Legacy Installation',
+    'P.S. You can buy premium': 'P.S. Sie können Premium',
+    'in our discord': 'in unserem Discord',
+    'to skip the key system.': 'kaufen, um das Key System zu überspringen.',
+    'Below, you can find a video with instructions on downloading Fluxus Android.': 'Hier können Sie ein Video mit Anleitungen finden für die Fluxus Android Installation.',
+    'Scroll up for links': 'Nach oben für die links.',
+    'https://www.youtube.com/embed/d6V2rHDSJM4': 'https://www.youtube.com/embed/d6V2rHDSJM4'
   },
   en: {
     '​​​​​T​h​e': 'The'
@@ -51,7 +78,7 @@ langData[lang]=langData[lang] ?? {}
 
 export const translate = (str: string) => {
   const translated = langData[lang][str];
-  if (!translated && hasTransl) console.warn(`No translation for '${str}'`);
+  if (!translated && hasTransl && lang !== 'en') console.warn(`No translation for '${str}'`);
   return translated ?? str
 }
 export default translate
