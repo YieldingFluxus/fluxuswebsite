@@ -47,12 +47,12 @@
     <div>
       <h1>{translate('Legacy Installation')}</h1>
       <p>
-        Is Fluxus Android not working?<br />
-        Try this legacy installation method instead.
+        {translate('Is Fluxus Android not working?')}<br />
+        {translate('Try this legacy installation method instead.')}
       </p>
     </div>
     <div class="putmeonthebottom">
-      <p style="margin-bottom: -0.4em">Installation</p>
+      <p style="margin-bottom: -0.4em">{translate('Installation')}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="48"
@@ -65,13 +65,14 @@
   </div>
   <div class="p2">
     <div>
-      <h1>Instructions</h1>
+      <h1>{translate('Instructions')}</h1>
       <p>
-        Below, you can find a video with instructions on downloading Fluxus
-        Android.
+        {translate(
+          'Below, you can find a video with instructions on downloading Fluxus Android.'
+        )}
       </p>
       <iframe
-        src="https://www.youtube.com/embed/l6P-QL_4U5w"
+        src={translate('https://www.youtube.com/embed/l6P-QL_4U5w')}
         title="YouTube video player"
         frameborder="0"
         allowfullscreen
@@ -89,10 +90,10 @@
       >
         <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
       </svg>
-      <p style="margin-top: -12px">Installation Instructions</p>
+      <p style="margin-top: -12px">{translate('Installation Instructions')}</p>
     </div>
     <div>
-      <h1>Resources</h1>
+      <h1>{translate('Resources')}</h1>
       <a
         href="https://cdn.discordapp.com/attachments/1026462567792652330/1052157945409982494/bin.mt.plus_2.12.2.apk"
         target="_blank"
@@ -119,17 +120,17 @@
         >Copy Smali Code</a
       >
       <p class="september eleventh was an amazing day for every american">
-        Make sure you delete the arm64-v8a folder and install
-        libFluxusAndroid.so into armeabi-v7a! If you forget this, your
-        application will crash.
+        {translate(
+          'Make sure you delete the arm64-v8a folder and install libFluxusAndroid.so into armeabi-v7a! If you forget this, your application will crash.'
+        )}
         <br />
         <br />
-        P.S. If you need help
+        {translate('P.S. If you need help')}
         <a
           href="https://flux.li/discord.php"
           target="_blank"
           rel="noopener noreferrer"
-          class="nobtn">join our discord server</a
+          class="nobtn">{translate('join our discord server')}</a
         >
       </p>
     </div>
