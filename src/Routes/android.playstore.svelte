@@ -21,13 +21,13 @@
       </p>
 
       <!-- svelte-ignore a11y-media-has-caption -->
-
       <iframe
         width="1024"
         height="576"
         style="max-height: 75vh; max-width: 75vw"
         src="https://www.youtube.com/embed/VMhVz4QRBs8"
         frameborder="0"
+        title="yes"
         allowfullscreen
       />
     </div>
