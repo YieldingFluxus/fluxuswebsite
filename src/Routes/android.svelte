@@ -243,7 +243,6 @@
         src={translate('https://www.youtube.com/embed/d6V2rHDSJM4')}
         title="[MOBILE] How to install Fluxus Android - FULL TUTORIAL"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
     </div>

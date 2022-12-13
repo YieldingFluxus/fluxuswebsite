@@ -34,7 +34,6 @@
         src={translate('https://www.youtube.com/embed/MqBjGEo289Q')}
         title="[UPDATED] How to Install FLUXUS Executor Free | Download Tutorial | Level 8 Exploit | 2022"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
     </div>

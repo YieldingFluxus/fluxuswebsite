@@ -1,5 +1,6 @@
 <script lang="ts">
   import axios from 'axios';
+  import translate from '../i18n';
   let soURL = 'https://yieldingfluxus.github.io/so-mirror/';
   // fetch('https://flux.li/android/external/so.txt', {
   //   mode: 'no-cors',
@@ -44,7 +45,7 @@
 <main>
   <div class="p1">
     <div>
-      <h1>Legacy Installation</h1>
+      <h1>{translate('Legacy Installation')}</h1>
       <p>
         Is Fluxus Android not working?<br />
         Try this legacy installation method instead.
@@ -73,7 +74,6 @@
         src="https://www.youtube.com/embed/l6P-QL_4U5w"
         title="YouTube video player"
         frameborder="0"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
         allowfullscreen
       />
     </div>
@@ -93,14 +93,8 @@
     </div>
     <div>
       <h1>Resources</h1>
-
-      <p>
-        Make sure you delete the arm64-v8a folder and install
-        libFluxusAndroid.so into armeabi-v7a! If you forget this, your
-        application will crash.
-      </p>
       <a
-        href="https://cdn.discordapp.com/attachments/1034304168409714720/1051628440924729394/MT_Manager.apk"
+        href="https://cdn.discordapp.com/attachments/1026462567792652330/1052157945409982494/bin.mt.plus_2.12.2.apk"
         target="_blank"
         rel="noopener noreferrer">MT Manager</a
       >
@@ -116,7 +110,7 @@
       <!-- svelte-ignore a11y-missing-attribute -->
       <iframe
         src="https://yieldingfluxus.github.io/smalipage"
-        style="border:none; width: 512px; max-width: 95vw;"
+        style="border:none; width: 512px; max-width: 95vw;margin-bottom:-20px"
         frameborder="0"
       />
       <br />
@@ -124,8 +118,14 @@
       <a on:click={copysmali} on:keypress={copysmali} href="javascript:void 0"
         >Copy Smali Code</a
       >
-      <p>
-        P.S. If you need help <a
+      <p class="september eleventh was an amazing day for every american">
+        Make sure you delete the arm64-v8a folder and install
+        libFluxusAndroid.so into armeabi-v7a! If you forget this, your
+        application will crash.
+        <br />
+        <br />
+        P.S. If you need help
+        <a
           href="https://flux.li/discord.php"
           target="_blank"
           rel="noopener noreferrer"
@@ -137,6 +137,14 @@
 </main>
 
 <style lang="scss">
+  .september.eleventh.was.an.amazing.day.for.every.american {
+    max-width: 50vw;
+  }
+  @media screen and (max-width: 1000px) {
+    .september.eleventh.was.an.amazing.day.for.every.american {
+      max-width: 85vw;
+    }
+  }
   .p1,
   .p2,
   .p3 {
@@ -198,8 +206,5 @@
     top: 44px;
     color: #ddddddaa;
     font-size: 1.05rem;
-  }
-  button {
-    border: 0px;
   }
 </style>

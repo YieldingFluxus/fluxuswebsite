@@ -29,7 +29,6 @@
         style="max-height: 75vh; max-width: 75vw"
         src="https://www.youtube.com/embed/zki3DJ8bBsg"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
         title="YT Video"
       />
