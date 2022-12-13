@@ -34,16 +34,14 @@
           )
         );
     });
+  /** Copies the smali code to the clipboard */
+  const copysmali = () =>
+    navigator.clipboard.writeText(
+      'const-string v0, "FluxusAndroid"\ninvoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V'
+    );
 </script>
 
-
 <main>
-  <script>    
-    function copysmali() 
-    {
-      navigator.clipboard.writeText("const-string v0, \"FluxusAndroid\"\ninvoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V");
-    }
-  </script>
   <div class="p1">
     <div>
       <h1>Legacy Installation</h1>
@@ -96,10 +94,15 @@
     <div>
       <h1>Resources</h1>
 
-      <p>Make sure you delete the arm64-v8a folder and install libFluxusAndroid.so into armeabi-v7a! If you forget this, your application will crash.</p>
-      <button
-        onclick="window.open('https://cdn.discordapp.com/attachments/1034304168409714720/1051628440924729394/MT_Manager.apk')"
-        rel="noopener noreferrer">MT Manager</button
+      <p>
+        Make sure you delete the arm64-v8a folder and install
+        libFluxusAndroid.so into armeabi-v7a! If you forget this, your
+        application will crash.
+      </p>
+      <a
+        href="https://cdn.discordapp.com/attachments/1034304168409714720/1051628440924729394/MT_Manager.apk"
+        target="_blank"
+        rel="noopener noreferrer">MT Manager</a
       >
       <a href={soURL} target="_blank" rel="noopener noreferrer"
         >libFluxusAndroid.so</a
@@ -117,13 +120,17 @@
         frameborder="0"
       />
       <br />
-      <button onclick="copysmali();">Copy Smali Code</button>
+      <!-- svelte-ignore a11y-invalid-attribute -->
+      <a on:click={copysmali} on:keypress={copysmali} href="javascript:void 0"
+        >Copy Smali Code</a
+      >
       <p>
         P.S. If you need help <a
           href="https://flux.li/discord.php"
           target="_blank"
           rel="noopener noreferrer"
-          class="nobtn">join our discord server</a> 
+          class="nobtn">join our discord server</a
+        >
       </p>
     </div>
   </div>
@@ -179,16 +186,6 @@
     a.nobtn {
       color: rgb(202, 211, 245);
     }
-    button:not(.nobtnn) {
-      color: rgb(202, 211, 245);
-      text-decoration: none;
-      padding: 8px 8px;
-      background: rgb(141, 115, 176);
-      /*border-radius: 16px;*/
-    }
-    button.nobtnn {
-      color: rgb(202, 211, 245);
-    }
   }
   .putmeonthebottom {
     position: absolute;
@@ -201,5 +198,8 @@
     top: 44px;
     color: #ddddddaa;
     font-size: 1.05rem;
+  }
+  button {
+    border: 0px;
   }
 </style>

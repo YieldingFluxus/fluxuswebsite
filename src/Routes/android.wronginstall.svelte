@@ -6,18 +6,21 @@
   <div class="p1">
     <div>
       <h1>Fluxus Android Download Issue</h1>
-      <p>You CANNOT use Roblox from the PlayStore. Uninstall ALL Roblox apps before trying to install Fluxus.</p>
+      <p>
+        You CANNOT use Roblox from the PlayStore. Uninstall ALL Roblox apps
+        before trying to install Fluxus.
+      </p>
       <p>Install Roblox from here!</p>
       <p>Watch the video for help!</p>
       <p>
-          Install <a
-            href="/android/roblox-mirrors/"
-            class="normal"
-            target="_blank"
-            rel="noopener noreferrer">Roblox APK</a
-          >
+        Install <a
+          href="/android/roblox-mirrors/"
+          class="normal"
+          target="_blank"
+          rel="noopener noreferrer">Roblox APK</a
+        >
       </p>
-        
+
       <!-- svelte-ignore a11y-media-has-caption -->
 
       <iframe
@@ -28,8 +31,8 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
+        title="YT Video"
       />
-
     </div>
   </div>
 </main>
@@ -52,13 +55,6 @@
       font-weight: 400;
       color: #a5adcb;
       font-size: 1.2em;
-    }
-    ol {
-      color: #a5adcb;
-      font-size: 1.2em;
-      text-align: left;
-      width: max-content;
-      display: inline-block;
     }
     a:not(.normal) {
       color: rgb(202, 211, 245);
