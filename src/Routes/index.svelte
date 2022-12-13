@@ -5,6 +5,7 @@
   import aui from '../assets/aui.png';
   import Icon from '../assets/faviconbutpng.png';
   import baseUrl from '../base';
+  import { translate } from '../i18n';
   const shouldDisableUI = navigator.userAgent.includes('iPhone');
 </script>
 
@@ -14,16 +15,22 @@
       <img src={Icon} alt="Icon" />
       <div class="content">
         <h1 class="rev">
-          <span class="c">A Fresh<br />Execution Experience.</span>
+          <span class="c"
+            >{translate('A Fresh')}<br />{translate(
+              'Execution Experience.'
+            )}</span
+          >
         </h1>
-        <p class="👌👌👌 👌">Unrivaled Power, Unbeatable Pricepoint<br />​</p>
+        <p class="👌👌👌 👌">
+          {translate('Unrivaled Power, Unbeatable Pricepoint')}<br />​
+        </p>
         <Link
           to="{baseUrl}/{navigator.userAgent.includes('Android')
             ? 'android'
             : 'dl'}"
           class="active"
         >
-          <span class="text">Download now</span><span
+          <span class="text">{translate('Download now')}</span><span
             class="material-symbols-outlined icon"
           >
             arrow_forward_ios
@@ -35,7 +42,7 @@
       class="putmeonthebottom this is why September11th2001 happened"
       style={shouldDisableUI ? 'display:none' : ''}
     >
-      <p style="margin-bottom: -0.4em">Scroll down for more</p>
+      <p style="margin-bottom: -0.4em">{translate('Scroll down for more')}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="48"
@@ -56,11 +63,14 @@
         />
       </div>
       <div class="centerme">
-        <h1>A Minimalistic UI</h1>
+        <h1>{translate('A Minimalistic UI')}</h1>
         <p>
-          Useless features shouldn't take up your entire screen.<br />
-          Only the most essential features are on the main UI - anything extra is
-          just one more click away.
+          {translate(
+            "Useless features shouldn't take up your entire screen."
+          )}<br />
+          {translate(
+            'Only the most essential features are on the main UI - anything extra is just one more click away.'
+          )}
         </p>
       </div>
     </div>
@@ -75,10 +85,11 @@
           <div class="card-info-wrapper">
             <div class="card-info">
               <div class="card-info-title">
-                <h3>Fast</h3>
+                <h3>{translate('Fast')}</h3>
                 <h4>
-                  On all supported platforms, Fluxus performs significantly
-                  better than the competition.
+                  {translate(
+                    'On all supported platforms, Fluxus performs significantly better than the competition.'
+                  )}
                 </h4>
               </div>
             </div>
@@ -93,10 +104,11 @@
           <div class="card-info-wrapper">
             <div class="card-info">
               <div class="card-info-title">
-                <h3>Advanced IDE</h3>
+                <h3>{translate('Advanced IDE')}</h3>
                 <h4>
-                  The Fluxus IDE is amongst one of the most advanced on the
-                  market.
+                  {translate(
+                    'The Fluxus IDE is amongst one of the most advanced on the market.'
+                  )}
                 </h4>
               </div>
             </div>
@@ -111,10 +123,11 @@
           <div class="card-info-wrapper">
             <div class="card-info">
               <div class="card-info-title">
-                <h3>Secure & Undetectable</h3>
+                <h3>{translate('Secure & Undetectable')}</h3>
                 <h4>
-                  We have a great track record of patching all known
-                  vulnerabilities & detections quickly.
+                  {translate(
+                    'We have a great track record of patching all known vulnerabilities & detections quickly.'
+                  )}
                 </h4>
               </div>
             </div>
@@ -129,10 +142,11 @@
           <div class="card-info-wrapper">
             <div class="card-info">
               <div class="card-info-title">
-                <h3>Reliable</h3>
+                <h3>{translate('Reliable')}</h3>
                 <h4>
-                  Our Advanced Execution Core is extremely reliable, allowing
-                  you to execute most scripts.
+                  {translate(
+                    'Our Advanced Execution Core is extremely reliable, allowing you to execute most scripts.'
+                  )}
                 </h4>
               </div>
             </div>
@@ -147,10 +161,14 @@
           <div class="card-info-wrapper">
             <div class="card-info">
               <div class="card-info-title">
-                <h3>Reputable</h3>
+                <h3>{translate('Reputable')}</h3>
                 <h4>
-                  During the past {new Date().getUTCFullYear() - 2019} years, we've
-                  established a reputation as industry leaders.
+                  {translate(
+                    "During the past YEARCOUNT years, we've established a reputation as industry leaders."
+                  ).replace(
+                    'YEARCOUNT',
+                    (new Date().getUTCFullYear() - 2019).toString()
+                  )}
                 </h4>
               </div>
             </div>
@@ -165,10 +183,11 @@
           <div class="card-info-wrapper">
             <div class="card-info">
               <div class="card-info-title">
-                <h3>Fast Updates</h3>
+                <h3>{translate('Fast Updates')}</h3>
                 <h4>
-                  No more waiting for updates: Most of the time, Fluxus updates
-                  within under an hour.
+                  {translate(
+                    'No more waiting for updates: Most of the time, Fluxus updates within under an hour.'
+                  )}
                 </h4>
               </div>
             </div>
@@ -185,14 +204,16 @@
     />
     <div class="ok" style="position: relative; z-index: 50;">
       <h1>
+        {translate('​​​​​​')}
         <underline
           style="text-decoration: underline; text-decoration-color: #705d8f"
-          >The</underline
-        > executor for mobile.
+          >{translate('​​​​​T​h​e')}</underline
+        >
+        {translate('executor for mobile.')}
       </h1>
       <p>
-        Fluxus Android brings the Premium Executor<br />Experience to your
-        pocket. For free.
+        {translate('Fluxus Android brings the Premium Executor')}<br />
+        {translate('Experience to your pocket. For free.')}
       </p>
       <br />
       <Link
@@ -203,7 +224,7 @@
         }}
       >
         <span class="nomobile"
-          ><span class="text">Get Fluxus Android</span>
+          ><span class="text">{translate('Get Fluxus Android')}</span>
         </span><span class="material-symbols-outlined icon">
           arrow_forward_ios
         </span>
