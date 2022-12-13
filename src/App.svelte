@@ -13,6 +13,7 @@
   import WrongDownload2 from './Routes/android.wronginstall.svelte';
   import Acknowledgements from './Routes/acknowledgements.svelte';
   import baseUrl from './base';
+  import translate from './i18n';
 
   // easter egg
   if (
@@ -117,10 +118,12 @@
         ></Link
       >
       <Link to="{baseUrl}/dl" class="nomobile"
-        ><span class="cont">Download</span></Link
+        ><span class="cont">{translate('Download')}</span></Link
       >
-      <Link to="{baseUrl}/android"><span class="cont">Android</span></Link>
-      <a href={discord}><span class="cont">Discord</span></a>
+      <Link to="{baseUrl}/android"
+        ><span class="cont">{translate('Android')}</span></Link
+      >
+      <a href={discord}><span class="cont">{translate('Discord')}</span></a>
     </nav>
   </div>
   <div class="page">
@@ -155,8 +158,9 @@
     <Route path="{baseUrl}/acknowledgements"><Acknowledgements /></Route>
 
     <Route path="{baseUrl}/android/errors/wrong_two"><WrongDownload2 /></Route>
-    <Route path="{baseUrl}/android/errors/wrong_two.html"><WrongDownload2 /></Route>
-
+    <Route path="{baseUrl}/android/errors/wrong_two.html"
+      ><WrongDownload2 /></Route
+    >
   </div>
 </Router>
 

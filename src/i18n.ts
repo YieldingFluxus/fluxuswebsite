@@ -63,7 +63,11 @@ export const langData: Record<string, Partial<i18nData>> = {
     'to skip the key system.': 'kaufen, um das Key System zu überspringen.',
     'Below, you can find a video with instructions on downloading Fluxus Android.': 'Hier können Sie ein Video mit Anleitungen finden für die Fluxus Android Installation.',
     'Scroll up for links': 'Nach oben für die links.',
-    'https://www.youtube.com/embed/d6V2rHDSJM4': 'https://www.youtube.com/embed/d6V2rHDSJM4'
+    'https://www.youtube.com/embed/d6V2rHDSJM4': 'https://www.youtube.com/embed/d6V2rHDSJM4',
+    // titlebar
+    'Download': 'Herunterladen',
+    'Android': 'Android',
+    'Discord': 'Discord',
   },
   en: {
     '​​​​​T​h​e': 'The'
