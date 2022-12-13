@@ -1,5 +1,6 @@
 <script lang="ts">
   import baseUrl from '../base';
+  import translate from '../i18n';
 
   if (navigator.userAgent.includes('Android'))
     window.location.replace(baseUrl + '/android');
@@ -8,7 +9,7 @@
 <main>
   <div class="p1">
     <div>
-      <h1>Download Fluxus Windows/Linux</h1>
+      <h1>{translate('Download Fluxus Windows/Linux')}</h1>
       <a
         href="https://linkvertise.com/152666/FluxusV7Installer/1"
         target="_blank"
@@ -20,16 +21,17 @@
         rel="noreferrer">LV</a
       >
       <p>
-        Note: The above contain advertisements. Please be aware of these before
-        you continue.
+        {translate(
+          'Note: The above contain advertisements. Please be aware of these before you continue.'
+        )}
       </p>
       <hr />
-      <h2>Need Help?</h2>
+      <h2>{translate('Need Help?')}</h2>
       <iframe
         width="1024"
         height="576"
         style="max-height: 75vh; max-width: 75vw"
-        src="https://www.youtube.com/embed/MqBjGEo289Q"
+        src={translate('https://www.youtube.com/embed/MqBjGEo289Q')}
         title="[UPDATED] How to Install FLUXUS Executor Free | Download Tutorial | Level 8 Exploit | 2022"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
