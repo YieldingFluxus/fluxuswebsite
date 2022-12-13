@@ -100,7 +100,7 @@ export const langData: Record<string, Partial<i18nData>> = {
     'Our Advanced Execution Core is extremely reliable, allowing you to execute most scripts.': '',
     'During the past YEARCOUNT years, we\'ve established a reputation as industry leaders.': '', // YEARCOUNT is automatically replaced with the amount of years since 2019
     'No more waiting for updates: Most of the time, Fluxus updates within under an hour.': '',
-    '​​​​​​':'', // Text before the 'The' in the android text.
+    '​​​​​​':'', // Text before the underlined text in the android text.
     '​​​​​T​h​e': '', // input text contains ZWSPs to avoid conflicts. This is the underlined text. Should emphasize that this is the go-to for Android Executors.
     'executor for mobile.': '', // Text after the 'The'
     'Fluxus Android brings the Premium Executor': '',
