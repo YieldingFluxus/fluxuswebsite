@@ -26,7 +26,7 @@ export const langData: Record<string, Partial<i18nData>> = {
     'Our Advanced Execution Core is extremely reliable, allowing you to execute most scripts.': 'Unser komplexer Ausführungskern ist äußerst zuverlässig und ermöglicht die einwandfreie Ausführung der meisten Scripts.',
     'During the past YEARCOUNT years, we\'ve established a reputation as industry leaders.': 'Innerhalb den Letzten YEARCOUNT Jahren haben wir eine Reputation als Industry Leaders erarbeitet',
     'No more waiting for updates: Most of the time, Fluxus updates within under an hour.': 'Nie mehr für Updates warten: Fluxus updatet fast immer innerhalb unter einer Stunde!',
-    '​​​​​​':'Das', // Text before the 'The' in the android text.
+    '​​​​​​': 'Das', // Text before the 'The' in the android text.
     '​​​​​T​h​e': 'Beste', // input text contains ZWSPs to avoid conflicts. This is the underlined text. Should emphasize that this is the go-to for Android Executors.
     'executor for mobile.': 'Executor für Android.', // Text after the 'The'
     'Fluxus Android brings the Premium Executor': 'Fluxus Android liefert das Premium Executor-Erlebnis',
@@ -77,7 +77,8 @@ export const langData: Record<string, Partial<i18nData>> = {
     'P.S. If you need help': 'P.S. Falls Sie Hilfe brauchen, können sie ein Ticket öffnen in unserem',
     'join our discord server': 'Discord Server'
   },
-  nl: {
+  // remove the 'true ? {} : ' during testing & once you're done with translations
+  nl: true ? {} : {
     // Main Page
     'A Fresh': '',
     'Execution Experience.': '',
